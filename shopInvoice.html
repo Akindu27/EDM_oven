@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="icon" href="images/EDM_OVEN_logo.png">
+        <title>
+            Invoice
+        </title>
+        
+        <link rel="stylesheet" href="CSS/Student_1/shopInvoice.css">
+        
+    </head>
+    <body>
+        <a id="backTo" href="Shop.html">Back to Store</a><br><br>
+        <div id="invoiceContent">
+            <div class="invoice-box">
+                <h2 class="section-header">-INVOICE-</h2>
+                <table class="companyDetails">
+                    <tr>
+                        <td>
+                            No.36, <br />
+                            Anguruwatota Road,<br />
+                            Kudayala,Horana.
+                        </td>
+
+                        <td>
+                            <br />
+                            Created on: 2023
+                        </td>
+                    </tr>
+                </table>    
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <table class="bottom"> 
+                                <tr>
+                                    <td >
+                                        <img src="images/EDM_OVEN_logo.png" alt="Company logo" style="width: 100%; max-width: 100px" />
+                                    </td>
+                                    <td>
+                                        EDM OVEN<br />
+                                        Contact Us :+94 776761369<br />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr class="userDetails">
+                        <p id="coustomerDTitle">Customer Details</p>
+                        <p id="paragraph"></p>
+                        <hr>
+                    </tr>
+                    <section class="container">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">ITEM</span>
+                            <span class="cart-price cart-header cart-column">PRICE</span>
+                        </div>
+                        
+                        <div id="cartItems"></div>   
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Total</strong>
+                            <span id="totalOut"></span>
+                        </div>
+                    </section>        
+                </table>
+            </div>
+        </div>        
+        <script>
+            document.getElementById("totalOut").innerHTML=localStorage.getItem("cartTotal");
+            document.getElementById("cartItems").innerHTML=localStorage.getItem("ITEMS");
+        </script>
+        <script src="JS/Student_1/shopInvoice.js"></script>
+    </body>
+</html>

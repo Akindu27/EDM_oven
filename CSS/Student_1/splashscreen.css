@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size:45px;
+}
+
+.middle-page{
+    background-color: rgb(11, 11, 11);
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    padding-top: 3cm;
+}
+
+.team-name{
+    color: #ffffff;
+    font-family:'Dancing Script','cursive;';
+	margin: auto;
+	width: 100%;
+	padding: 90px 0 0 0;
+    font-size: 50px;
+	text-align: center;
+	text-shadow: 2px 2px #060606;
+	z-index: 4;
+}
+
+.b_name{
+    display:inline-block;
+}
+
+.splash{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 200;
+    text-align: center;
+    line-height: 90vh;
+}
+
+.splash.display-none{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -10;
+    text-align: center;
+    line-height: 90vh;
+    transition: all 0.5s;
+}
+.bg{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
+
+.fade-logo{
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    width: 350px;
+    height: 290px;
+    object-position: center top;
+}
+
+.intro{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../images/splash_bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1.5s;
+}
+.name-header{
+    position: absolute;
+    top:59%;
+    left:50.5%;
+    transform: translate(-50%,-50%);
+    color: rgb(190, 20, 150);
+
+}
+
+.name{
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+    font-family: 'Audiowide', cursive;
+    text-shadow:3px 3px rgb(153, 9, 188);
+
+}
+
+.name.active{
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.name.fade{
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}

@@ -1,0 +1,205 @@
+/* for the background video */
+@media (min-aspect-ratio: 16/9){
+  #bgvideo{
+      width: 100%;
+      height:auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9){
+  #bgvideo{
+      width: auto;
+      height:100%;
+  }
+}
+
+#bgvideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  margin-bottom: -80px;
+}
+
+.footer{
+  margin-top: -550px;
+}
+
+.content_1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.content_2{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 350px;
+}
+
+.artist_content{
+  position: relative;
+  width: 400px;
+  height: 300px;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgba(47, 0, 219, 0.548),#9c0b0b71);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+.artist_class1{
+  height: 190px;
+  transition: transform .5s ease-in-out;  
+  border-radius: 20px;
+  border:rgb(202, 72, 241);
+  box-shadow: 0 25px 50px rgba(0, 255, 255, 0.5);
+  border-style:outset;
+}
+
+.artist_class1:hover{
+  transform: scale(1.1);
+}
+
+.artist_class2{
+  height: 190px;
+  transition: transform .5s ease-in-out;  
+  border-radius: 20px;
+  border:rgb(202, 72, 241);
+  box-shadow: 0 25px 50px rgba(0, 255, 255, 0.5);
+  border-style:outset;
+}
+
+.artist_class2:hover{
+  transform :scale(1.23);
+}
+
+/* -------------------artist_content------------------- */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+} 
+
+.Artist_video{
+width:780px;
+height:740px;
+margin-left: 5%;
+margin-top: 2%;
+border-style: ridge;
+border-color: aquamarine;
+
+}
+
+.info{
+  position:absolute;
+  width: 650px;
+  height: 350px;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgba(47, 0, 219, 0.548),#a8f3fb71);
+  box-shadow: 0 10px 25px rgba(245, 132, 132, 0.5);
+  border-radius: 20px;  
+  top: 20%;
+  right: 5%;
+  text-align: center;
+  font-size:larger;
+  font-family: 'Saira Condensed', sans-serif;
+}
+
+.info p{
+color:white;
+}
+
+.title_MartinG p{
+color: white;
+text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+position: absolute;
+top: 15%;
+right: 11%;
+font-size: 60px;
+font-family: 'Audiowide', cursive; 
+}
+
+.title_Marsh p{
+color: white;
+text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+position: absolute;
+top: 15%;
+right: 12%;
+font-size: 60px;
+font-family: 'Audiowide', cursive; 
+}
+
+.title_Alan p{
+color: white;
+text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+position: absolute;
+top: 15%;
+right: 12%;
+font-size: 60px;
+font-family: 'Audiowide', cursive; 
+}
+
+.title_Avicii p{
+color: white;
+text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+position: absolute;
+top: 15%;
+right: 21%;
+font-size: 60px;
+font-family: 'Audiowide', cursive; 
+}
+
+.title_Chains p{
+color: white;
+text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+position: absolute;
+top: 15%;
+right: 10%;
+font-size: 60px;
+font-family: 'Audiowide', cursive; 
+}
+ 

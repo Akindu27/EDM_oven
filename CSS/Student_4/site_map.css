@@ -1,0 +1,151 @@
+ /* for the background video video */
+@media (min-aspect-ratio: 16/9){
+    #sitemap_video{
+        width: 100%;
+        height:max-content;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    #sitemap_video{
+        width: auto;
+        height:100%;
+    }
+}
+
+#sitemap_video {
+    position:fixed;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    top:0;
+    object-fit: cover;
+    opacity:1;
+    z-index: -1;
+}
+
+/* For the main topic card */
+.topic {
+    width: 350px;
+    height: 80px;
+    background: #07182E;
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .topic h2 {
+    z-index: 1;
+    color: white;
+    font-size: 65px;
+    font-style: italic;
+    font-family: 'Chakra Petch', sans-serif;
+  }
+  
+  .topic::before {
+    content: '';
+    position: absolute;
+    width: 450px;
+    background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+    height: 80%;
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.2s linear;
+  }
+  
+  @keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .topic::after {
+    content: '';
+    position: absolute;
+    background: #07182E;
+    ;
+    inset: 5px;
+    border-radius: 15px;
+  }  
+ 
+/* site-map SVG items' css*/
+.svg{
+	margin-left: 90px;
+  margin-bottom:-500px;
+}
+
+.svg a rect {
+    stroke-dasharray: 700;
+    stroke-dashoffset: 700;
+    stroke-linecap: butt;
+    -webkit-transition: all 2s ease-out;
+    -moz-transition: all 2s ease-out;
+    -ms-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+    stroke:yellow;
+    stroke-width:3;
+    fill: rgb(1, 163, 163);
+}
+
+.svg rect{
+    fill: rgb(128, 0, 96);
+}
+
+.svg a:hover rect {
+    fill: rgb(64, 28, 150);
+    stroke-dashoffset: 0;
+    stroke-dasharray: 700;
+    stroke-width:3;
+    stroke: red;
+}
+
+.svg circle{
+  fill: rgb(128, 0, 96);
+  stroke:rgb(0, 255, 34);
+  stroke-width:2;
+}
+
+.svg text {
+    fill: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.svg a:hover text {
+    fill: rgb(4, 255, 58);
+}
+
+/* SVG llines' css */
+.svg_lines{
+    stroke: rgb(255, 255, 174);
+    stroke-width:5px;
+}
+
+/* SVG circles' text css */
+.stu text{
+  font-size: 13px;
+  font-weight: bolder;
+}
+
+.number text{
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+/* Only for developer text rectangle */
+.develop text{
+  font-weight: bolder;
+  font-size: 24px;
+}

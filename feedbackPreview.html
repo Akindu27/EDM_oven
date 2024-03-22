@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EDM | FEEDBACK</title>
+    <!--Linking the page icon-->
+    <link rel="icon" href= "images/EDM_OVEN_logo.png">
+    
+    <!-- <link rel="stylesheet" href="home.css"> -->
+    <link rel="stylesheet" href="CSS/header.css" />
+    <link rel="stylesheet" href="CSS/footer.css" />
+    <link rel="stylesheet" href="CSS/Student_2/feedback.css" />
+    <link rel="stylesheet" href="CSS/Student_2/home.css" />
+    <script
+      src="https://kit.fontawesome.com/0fc81af0b7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- All navigation bar contents -->
+    <nav id="top">
+      <!--Linking the page icon-->
+      <img src="images/EDM_OVEN_logo.png" alt="Logo" class="logo" />
+
+      <a href="home.html"> </a>
+      <!--menu items-->
+      <ul>
+        <li><a href="home.html">WELCOME</a></li>
+        <li><a href="Artist.html">ARTIST</a></li>
+        <li><a href="Shop.html">ADD-ON SALES</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="EDMquiz.html">QUIZ</a></li>
+        <li><a href="site_map.html">SITE MAP</a></li>
+        <li><a href="feedback.html" class="selected">QUERY FORM</a></li>
+        <li><a href="AboutUs.html">ABOUT US</a></li>
+      </ul>
+    </nav>
+    <!-- Starting query form -->
+    <div class="container">
+        <div>
+            <img src="images/EDM_OVEN_logo.png" alt="EDM Logo" id="EDM_Logo" width="100">
+        </div>
+        <div class ="form">
+            <div class="title">
+                Query Form
+            </div>
+            <div class="query-preview">
+                <h2>Name: <span class="preview" id="name-preview"></span></h2>
+	            <h2>Email: <span class="preview" id="email-preview"></span></h2>
+	            <h2>Subject: <span class="preview" id="subject-preview"></span></h2>
+	            <h2>Message: <span class="preview" id="message-preview"></span></h2>
+            </div>
+            <div class="submit-box">
+                <input type="reset" class="button" value="Edit" onclick="edit()" >
+                <input type="submit" class="button" value="Send" onclick="send()" >
+            </div>
+        </div>
+
+    </div>
+    <!-- End of query form -->
+    <script src="JS/Student_2/feedbackPreview.js"></script>
+
+    <!-- ------------------------------------------------website footer----------------------------------------------- -->
+    <div class="footer">
+      <div class="footer-content">
+        <div class="logo_footer">
+          <!-- website logo in footer -->
+          <a href="home.html">
+            <img
+              src="images/EDM_OVEN_logo.png"
+              alt="footer logo"
+              width="55%"
+              role="img"
+              aria-label="link to home page"
+          /></a>
+        </div>
+        <div
+          class="footer-navigation text-left"
+          role="navigation"
+          aria-label="Main"
+        >
+          <h2>Navigation</h2>
+          <!-- footer navigation -->
+          <ul class="no-bullet">
+            <li><a href="home.html">WELCOME</a></li>
+            <li><a href="Artist.html">ARTIST</a></li>
+            <li><a href="Shop.html">ADD-ON SALES</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="EDMquiz.html">QUIZ</a></li>
+            <li><a href="site_map.html">SITE MAP</a></li>
+            <li><a href="feedback.html">QUERY FORM</a></li>
+            <li><a href="AboutUs.html">ABOUT US</a></li>
+          </ul>
+        </div>
+        <div class="footer-about">
+          <!-- footer about area -->
+          <h2>About Us</h2>
+          <!-- footer description about website -->
+          <p class="justify-para">
+            We created this website for our course work in web module.
+            <br />
+            This site contains information regards to Electronic Disk Music,
+            Artists and related <br />
+            other entertainment contents.We try to provide best entertainment
+            experience for you.
+            <br />
+            Also we have some most world famous music and other merch products.
+            for the lowest rates.
+          </p>
+        </div>
+        <div class="contact_info">
+          <!-- footer contact info -->
+          <h2><strong>Contact Info</strong></h2>
+          <p>
+            +94 776761369 <br /><br />
+            EDM OVEN <br />
+            No.36, <br />
+            Anguruwatota Road,<br />
+            Kudayala,Horana.
+          </p>
+        </div>
+      </div>
+      <hr class="footer-line_break" />
+      <div class="footer-content"></div>
+      <hr class="footer-line_break">
+      <!-- page credits-link to page editor -->
+      <p class="page_author"> <br> Created by <a href="PGeditor2.html">Hasitha Suranjana</a></p>
+    </div>
+  </body>
+</html>
